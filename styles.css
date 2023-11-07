@@ -102,14 +102,27 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px );
 }
-#videocontainer{
+.videocontainer{
     width: 100%;
     height: 100vh;
+    background-color: aqua;
 }
+
 #splash{
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
 }
+
 @media only screen and (max-width: 900px) {
+
+    /*---------hoveddør-----------*/
+   .videocontainer{
+    width: 900%;
+   }
+   #splash{
+    transform: rotate(90deg);
+   }
 
 }
 
