@@ -114,6 +114,52 @@ nav{
     object-fit: cover;    
 }
 
+/**** Kontakt side ****/
+#kontaktSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#kontakt h1 {
+    font-size: 60pt;
+    margin-bottom: 4%;
+}
+
+#kontakt {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+#informationer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+#informationer input {
+    width: 100%;
+}
+
+#kontaktImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#besked {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 @media only screen and (max-width: 900px) {
 
     /*---------hoveddør-----------*/
@@ -127,26 +173,3 @@ nav{
 }
 
 
-/************ Kontakt side **********/
-
-#kontaktSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#kontaktSection h1 {
-   
-}
-
-#kontakt {
-    
-}
-
-#informationer {
-   
-}
-
-#kontaktImg {
-    
-}
