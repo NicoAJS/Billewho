@@ -112,3 +112,28 @@ nav{
 @media only screen and (max-width: 900px) {
 
 }
+
+
+/************ Kontakt side **********/
+
+#kontaktSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kontaktSection h1 {
+   
+}
+
+#kontakt {
+    
+}
+
+#informationer {
+   
+}
+
+#kontaktImg {
+    
+}
