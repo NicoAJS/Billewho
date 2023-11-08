@@ -1,8 +1,10 @@
-const burger = document.querySelector(".burger");
+const logo = document.getElementById("logo");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a"); /*dette er et array - alle med classnamet nav-links indsættes */
+
+
 console.log("4");
-burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
+logo.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 console.log("6");    
 nav.classList.toggle("nav-active"); 
 console.log(navLinks.length);    
@@ -14,14 +16,14 @@ console.log(navLinks.length);
         link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.5 }s `;
     } /* starter animation med tidsforskudning fra top mod bund (hvorfor linksene gradvist fremkommer) */
     });
-    burger.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
+    logo.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
 });
 
 
 
 
 
-let omlist = document.getElementById("rumlist");
+let rumlist = document.getElementById("rumlist");
 rumlist.style.display = "none";
 
 function openDropdown(){

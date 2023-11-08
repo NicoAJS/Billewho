@@ -9,9 +9,9 @@ body{
     background-color: #f2f2f2;
 }
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 150pt;
-    color: rgb(3, 3, 72);
+    color: #0C0054;
     text-align: center;
 }
 
@@ -35,8 +35,20 @@ h1{
     background-image: url(images/burgerklat.png);
     background-size: 70px;
     background-repeat: no-repeat;
-    border: black, solid, 2px;
-    
+    border: black, solid, 2px;  
+}
+#burgerbaggrund:hover{
+    transform: scale(1.05);    
+}
+#logo{
+    width: 70px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px; 
+    transition: transform .3s;
+}
+#logo:hover{
+    transform: scale(1.05);
 }
         
 .burger div{
@@ -121,9 +133,9 @@ nav{
 }
 
 
-/*--------hoveddør-------------------------------*/
+/*--------INDEX-------------------------------*/
 
-@keyframes fadeInAnimation {
+@keyframes fadeOutAnimation {
     0% {
         opacity: 1;
     }
@@ -131,7 +143,21 @@ nav{
         opacity: 0;
      }
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.indexbody #logo{
+    opacity: 0;
+    animation: fadeInAnimation ease-in 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
 #relativcontainer{
     width: 100%;
     height: 100vh;
@@ -141,7 +167,7 @@ nav{
 .videocontainer{
     width: 100%;
     height: 100vh;
-    animation: fadeInAnimation ease-out 2s;
+    animation: fadeOutAnimation ease-in 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 2s; 
@@ -155,14 +181,22 @@ nav{
     object-fit: fill;
 }
 
-.btn{
+#btn{
     margin: auto;
     border: solid black 2px;
     width: 150px;
     height: 30px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 8px;
     margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: white;
+    transition: transform .3s;
+}
+#btn:hover{
+    transform: scale(1.05);
 }
 
 .posabs{
@@ -233,12 +267,14 @@ nav{
     display: none;
 }
 
+
 @media only screen and (max-width: 900px) {
 
     .Hcenter{
         font-size: 100pt;
+        margin-top: 20vh;
     }
-    /*---------hoveddør-----------*/
+    /*---------INDEX-----------*/
    .videocontainer{
     width: 900%;
    }
