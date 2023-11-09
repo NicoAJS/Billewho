@@ -14,6 +14,10 @@ h1{
     color: #0C0054;
     text-align: center;
 }
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+}
 
 .Hcenter{
     margin: auto;
@@ -89,15 +93,6 @@ nav{
     opacity: 0;
 }
 
-#headericons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#headericons a{
-    margin-top: 40px;
-}
   
 .nav-active{
     transform: translateX(0);
@@ -248,16 +243,62 @@ nav{
 #set-height {
     display: block;
   }
-  #v0 {
+#v0 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-  }
-  p {
-    font-size: 24px;
-  }
+}
 
+
+
+  /*----------transition test----------*/
+  .container {
+    position: relative;
+    width: 600px;
+    height: 200vh; /* Gør containeren høj nok til at scrolle */
+    overflow: hidden;
+}
+
+.fade-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Overgangseffekt på opacity */
+}
+
+.fade-div.active {
+    opacity: 1;
+}
+
+/*----------entre-----------*/
+.billede-tekst{
+    width: 70%;
+    margin-left: 20%;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    
+}
+
+.billedevenstre-entre{
+    width: 50%;
+    height: auto;
+}
+.teksthøjre-entre{
+    width: 40%;
+    margin-left: 10%;
+    height: auto;
+    border-left: solid black 2px;
+}
+.skjulmig{
+    display: block;
+    z-index: 1;
+}
+  
 /**** Kontakt side ****/
 #kontaktSection {
     display: flex;
