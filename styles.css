@@ -221,12 +221,42 @@ nav{
 
 
 /*-------RUM---------*/
+#scroll-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.fuldskaermvideo{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.5 ease;
+}
+
+.objectcover{
+    width: 100%;
+}
+#nummer2{
+    opacity: 0;
+}
 
 
+/*--------------videotest-------------*/
 
-
-
-
+#set-height {
+    display: block;
+  }
+  #v0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  p {
+    font-size: 24px;
+  }
 
 /**** Kontakt side ****/
 #kontaktSection {
@@ -299,6 +329,9 @@ nav{
     transform: rotate(90deg);
    }
 
+
+   /*------RUM-------------------*/
+   
    /*-------------ad ons-------------------*/
    .laptop{
     display: none;
