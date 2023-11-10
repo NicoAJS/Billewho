@@ -34,24 +34,30 @@ function openDropdown(){
     }
 }
 
-var frameNumber = 0, // start video at frame 0
-    // lower numbers = faster playback
-    playbackConst = 1000, 
-    // get page height from video duration
-    setHeight = document.getElementById("set-height"), 
-    // select video element         
-    vid = document.getElementById('v0'); 
 
-// dynamically set the page height according to video length
+
+var frameNumber = 0,
+    playbackConst = 1000,
+    setHeight = document.getElementById("set-height"),
+    vid = document.getElementById('v0'),
+    andreElementer = document.querySelector('.andreElementer');
+    v0a = document.getElementById('v0a')
+
 vid.addEventListener('loadedmetadata', function() {
   setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
 });
 
-// Use requestAnimationFrame for smooth playback
-function scrollPlay(){  
-  var frameNumber  = window.pageYOffset/playbackConst;
-  vid.currentTime  = frameNumber;
-  window.requestAnimationFrame(scrollPlay);
+function scrollPlay() {
+  var frameNumber = window.pageYOffset / playbackConst;
+  vid.currentTime = frameNumber;
+
+  if (vid.currentTime > vid.duration - 0.5) {
+    vid.style.position = 'relative';
+  } else {
+    window.requestAnimationFrame(scrollPlay);
+  }
 }
 
 window.requestAnimationFrame(scrollPlay);
+
+
