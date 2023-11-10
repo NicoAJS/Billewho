@@ -42,10 +42,10 @@ var frameNumber = 0,
     vid = document.getElementById('v0'),
     andreElementer = document.querySelector('.andreElementer');
     v0a = document.getElementById('v0a')
-
+/* 
 vid.addEventListener('loadedmetadata', function() {
   setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-});
+}); */
 
 function scrollPlay() {
   var frameNumber = window.pageYOffset / playbackConst;

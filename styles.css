@@ -244,11 +244,12 @@ nav{
 
 #set-height {
     display: block;
+    height: 500vh;
+    position: relative;
   }
 #v0 {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
 }
 
