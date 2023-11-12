@@ -37,7 +37,7 @@ function openDropdown(){
 
 
 var frameNumber = 0,
-    playbackConst = 300,
+    playbackConst = 700,
     setHeight = document.getElementById("set-height"),
     vid = document.getElementById('v0'),
     andreElementer = document.querySelector('.andreElementer');
