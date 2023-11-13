@@ -27,8 +27,20 @@ h1{
     text-align: center;
     transform:rotate(180deg);
     font-size: 100pt;
+    margin-top: 5%;
+}
+.vertikalHstreg{
+    writing-mode: vertical-rl;
+    text-align: center;
+    transform:rotate(180deg);
+    font-size: 100pt;
+    margin-top: 5%;
+    border-left: solid black 2px;
 }
 
+.pt50{
+    font-size: 20pt;
+}
 .billeH{
     text-align: right;
     margin-right: 2%;
@@ -350,9 +362,11 @@ nav{
 }
 
 .karouselDiv{
-    width: 100%;
+    width: 80%;
     height: 80%;
     display: flex;
+    padding-top: 10vh;
+    margin: auto;
 }
 
 .karouselT{
@@ -360,11 +374,52 @@ nav{
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    margin-right: 10%;
+    gap: 5%;
+}
+
+.karouselP{
+    text-align: justify;
+    padding-top: 5%;
+    border-top: solid black 2px;
+    margin-top: 2%;
+}
+.karouselB{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 5%;
 }
 .karouselpil{
-    width: 20px;
+    width: 50px;
     height: 20px;
+    margin-top: 20%;
+}
+.button{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: white;
+    transition: transform .3s;
+    z-index: 5;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+
+.gæsteDiv{
+    width: 30%;
+}
+.gæster{
+    width: 100%;
+    height: auto;
 }
 /**** Kontakt side ****/
 #kontaktSection {
