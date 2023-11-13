@@ -289,9 +289,12 @@ nav{
     height: 100vh;
 }
 .billedefuld{
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     object-fit: cover;
+    margin-left: 5%;
+    margin-top: 5%;
+    
 }
 .trekolonner{
     display: flex;
