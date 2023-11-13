@@ -29,6 +29,12 @@ h1{
     font-size: 100pt;
 }
 
+.billeH{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 15pt;
@@ -289,7 +295,6 @@ nav{
 .trekolonner{
     display: flex;
     width: 100%;
-
     padding-top: 10vh;
     height: 80%;
     justify-content: space-evenly;
@@ -317,6 +322,15 @@ nav{
     width: 100%;
     margin-bottom: 5vh;
 }
+
+.kolonne-billede-tekst{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 5%;
+    border-left: black solid 2px;
+}
+
 /**** Kontakt side ****/
 #kontaktSection {
     display: flex;
