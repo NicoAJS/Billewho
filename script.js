@@ -35,29 +35,44 @@ function openDropdown(){
 }
 
 
+console.log('set height');
+var setHeight = document.getElementById("set-height");
+console.log(setHeight);
+var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 900,
+    // get page height from video duration
+    
+    // select video element         
+    vid = document.getElementById('v0');
 
-var frameNumber = 0,
-    playbackConst = 700,
-    setHeight = document.getElementById("set-height"),
-    vid = document.getElementById('v0'),
-    andreElementer = document.querySelector('.andreElementer');
-    v0a = document.getElementById('v0a')
-/* 
-vid.addEventListener('loadedmetadata', function() {
-  setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-}); */
+// dynamically set the page height according to video length
+vid.addEventListener('loadedmetadata', function () {
+    getmetadata();
+});
 
+if (vid.readyState >= 2) {
+    getmetadata();
+}
+
+function getmetadata() {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+}
+
+// Use requestAnimationFrame for smooth playback
 function scrollPlay() {
-  var frameNumber = window.pageYOffset / playbackConst;
-  vid.currentTime = frameNumber;
-
-  if (vid.currentTime > vid.duration - 0.5) {
-    vid.style.position = 'relative';
-  } else {
+    var frameNumber = window.pageYOffset / playbackConst;
+    vid.currentTime = frameNumber;
     window.requestAnimationFrame(scrollPlay);
-  }
+    //console.log(vid.currentTime);
 }
 
 window.requestAnimationFrame(scrollPlay);
+
+//divskiftningstest
+
+
+  
+  
 
 

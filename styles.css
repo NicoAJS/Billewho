@@ -10,7 +10,7 @@ body{
 }
 h1{
     font-family: 'Lato', sans-serif;
-    font-size: 150pt;
+    font-size: 100pt;
     color: #0C0054;
 }
 
@@ -38,9 +38,6 @@ p{
     text-align: right;
 }
 
-.pt70{
-    font-size: 100pt;
-}
 body a{
     text-decoration: none;
     color: black;
@@ -233,7 +230,7 @@ nav{
 #set-height {
     display: block;
     position: relative;
-    height: 500vh;
+    bottom: 0;
   }
 #v0 {
     position: sticky;
@@ -262,6 +259,14 @@ nav{
     border-left: solid black 2px;
     padding-left: 20px;
 }
+.teksthøjre-entre-uborder{
+    width: 40%;
+    margin-left: 10%;
+    height: auto;
+
+    padding-left: 20px;
+}
+
 .rumtekst{
     text-align: justify;
 }
@@ -300,7 +305,11 @@ nav{
     object-fit: contain;
 
 }
-
+.underline{
+    border-bottom: black solid 2px;
+    width: 100%;
+    margin-bottom: 5vh;
+}
 /**** Kontakt side ****/
 #kontaktSection {
     display: flex;
