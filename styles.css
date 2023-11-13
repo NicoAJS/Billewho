@@ -329,8 +329,43 @@ nav{
     width: 60%;
     padding-left: 5%;
     border-left: black solid 2px;
+    align-items: flex-end;
 }
 
+.billewhoB{
+    width: 55%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 5%;
+}
+.billewhoT{
+    text-align: justify;
+    padding-left: 5%;
+}
+
+.margintop{
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.karouselDiv{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.karouselT{
+    width: 35%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.karouselpil{
+    width: 20px;
+    height: 20px;
+}
 /**** Kontakt side ****/
 #kontaktSection {
     display: flex;
