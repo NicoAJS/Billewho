@@ -246,15 +246,22 @@ nav{
     height: 80%;
     display: flex;   
 }
+.aflangDiv{
+    width: 90%;
+    margin-left: 5%;
+}
 
 .billedevenstre-entre{
     width: 50%;
     object-fit: contain;
 }
+.aflangB{
+    width: 60%;
+}
 
 .teksthøjre-entre{
     width: 40%;
-    margin-left: 10%;
+    margin-left: 5%;
     height: auto;
     border-left: solid black 2px;
     padding-left: 20px;
