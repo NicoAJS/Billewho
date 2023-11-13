@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="billeder">
+        <div class="billedeKarrusel">
+            <img id="venstrepil" src="#" alt="venstrepil">
+                <div class="imgKarusel">
+                    <img id="førstefoto" src="billeder/førstebilledekarusel.jpg" alt="billede 1">
+                    <img id="midterfoto" src="billeder/midterbilledekarusel.jpg" alt="billede 2">
+                    <img id="sidstefoto" src="billeder/sidstebilledekarussel.jpg" alt="billede 3"> 
+                </div>
+            <img id="højrepil" src="#" alt="højrepil">
+        </div>
+    </section>
+    
+</body>
+</html>
+
+<!--- Style som skal indsættes i css-->
+
+/****** PILE TIL BILLEDEKARUSELLEN *****/
+.billedeKarrusel{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+}
+
+#venstrepil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+#venstrepil:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#højrepil:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+#højrepil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+/****** BILLEDER TIL FOTOKARRUSELLEN *****/
+.billedeKarrusel{
+    margin-bottom: 2%;
+}
+
+.imgKarusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    width: 50%;
+    padding: 20px;
+}
+
+#førstefoto{
+    display: block;
+    border-radius: 10%;
+    width: 60%;
+}
+
+#midterfoto{
+    display: none;
+    border-radius: 10%;
+    width: 40%;
+}
+
+
+#sidstefoto{
+    display: none;  
+    border-radius: 10%;
+    width: 80%;
+}
+
+
+<!---Javascript-->
+/******* Billedkarrusel *******/
+// Variable:
+let førstefoto = document.getElementById("førstefoto");
+let midterfoto = document.getElementById("midterfoto");
+let sidstefoto = document.getElementById("sidstefoto");
+
+let venstrepil = document.getElementById("venstrepil"); 
+let hoejrepil = document.getElementById("højrepil");
+
+
+
+// Array
+
+let carousel = [førstefoto, midterfoto, sidstefoto];
+
+førstefoto.style.display = "block";
+midterfoto.style.display = "none";
+sidstefoto.style.display = "none";
+
+// Knapper med billeder af pile
+hoejrepil.addEventListener("click", naesteBillede);
+venstrepil.addEventListener("click", forrigeBillede);
+
+// Funktioner
+function naesteBillede(){
+    carousel[0].style.display = "none"; // Skjul den viste
+    carousel.push(carousel[0]); // Put den første ind til sidst
+    carousel.shift(); // Fjern den første og flyt alle en ned
+    carousel[0].style.display = "block"; // Vis den der nu er først
+}
+
+function forrigeBillede(){
+    carousel[0].style.display = "none"; // Skjul den viste
+    carousel.push(carousel[0]); // Put den første ind til sidst
+    carousel.shift(); // Fjern den første og flyt alle en ned
+    carousel[0].style.display = "block"; // Vis den der nu er først
+}
+
+// Funktion til at skifte til næste billede
+function visnaesteBillede() {
+    if (førstefoto.style.order === '1') {
+        førstefoto.style.order = '2';
+        midterfoto.style.order = '3';
+        sidstefoto.style.order = '1';
+    } else if (midterfoto.style.order === '1') {
+        førstefoto.style.order = '1';
+        midterfoto.style.order = '2';
+        sidstefoto.style.order = '3';
+    } else {
+        førstefoto.style.order = '3';
+        midterfoto.style.order = '1';
+        sidstefoto.style.order = '2';
+    }
+}
+
+// Funktion til at skifte til forrige billede
+function visforrigeBillede() {
+    if (førstefoto.style.order === '1') {
+        førstefoto.style.order = '3';
+        midterfoto.style.order = '1';
+        sidstefoto.style.order = '2';
+    } else if (midterfoto.style.order === '2') {
+        førstefoto.style.order = '2';
+        midterfoto.style.order = '3';
+        sidstefoto.style.order = '1';
+    } else { (sidstefoto.style.order === '3') 
+        førstefoto.style.order = '1';
+        midterfoto.style.order = '2';
+        sidstefoto.style.order = '3';
+    }
+}
