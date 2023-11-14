@@ -71,7 +71,7 @@ window.requestAnimationFrame(scrollPlay);
 
 
 //scrollvideo til køkken
-/*
+
 console.log('set height1');
 var setHeight1 = document.getElementById("set-height1");
 console.log(setHeight1);

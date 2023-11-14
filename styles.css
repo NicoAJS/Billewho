@@ -445,18 +445,23 @@ nav{
 
 /**** Kontakt side ****/
 
-.kontakt h1 {
+#kontakt{
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    font-size: 90pt;
-    margin-bottom: 4%;
-    margin-left: 70%;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 5%;
 }
 
-.kontaktImg {
-    width: 20%;
+#kontaktImg {
+    width: 50%;
     height: auto;
+
+}
+#informationer{
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
 }
 
 /*---------add ons---------------*/
@@ -467,6 +472,86 @@ nav{
 
 .mobil{
     display: none;
+}
+
+/*---------- FOOTER ------------*/
+footer{
+    background-color: #E2E1DB;
+}
+
+.footerlayout{
+    display: flex;
+    justify-content: center;
+    width:85%;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom:80px;
+}
+
+.footerbox{
+    width: 38%;
+    padding: 20px;
+}
+
+.lillefooterbox{
+    width:24%;
+    padding: 20px;
+}
+
+footer p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw; 
+    color: #000000;
+    line-height: 175%;
+}
+
+footer a{
+    display: block;
+}
+
+footer img{
+    width: 80%;
+    margin: 5%;
+}
+
+#nyhedsbrev {
+    width: 100%;
+    display: flex;
+  }
+  
+  #nyhedsbrev input[type=text], input[type=submit] {
+    width: 66%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  #nyhedsbrev input[type=text] {
+    margin-right: 5px; 
+    margin-top: 10px;
+  }
+  
+  #nyhedsbrev input[type=submit] {
+    width: 30%;
+    background-color: #F2F2F2;
+    color: #000000;
+    border: none;
+  }
+  
+  #nyhedsbrev input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+#someboks{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5% 5% 0%;
+}
+
+#someicon{
+    width: 18%;
 }
 
 
@@ -554,6 +639,44 @@ nav{
     margin-left: 5%;
     width: 85%;
    }
+
+   /* FOOTER */
+
+   .footerlayout{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footerbox{
+    display:none;
+    }
+
+    .lillefooterbox{
+    display:none;
+    }
+
+    .mobilfooterbox{
+    width: 85%;
+    }
+
+    footer p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 3.7vw; 
+    color: #000000;
+    line-height: 165%;
+    margin-bottom:40px;
+    }
+
+    footer a{
+    color: #000000;
+    text-decoration: underline;
+    }
 }
 
+@media only screen and (min-width: 900px){
+    .mobilfooterbox{
+        display:none;
+    }
+}
 
