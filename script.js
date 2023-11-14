@@ -106,9 +106,81 @@ function scrollPlay() {
 
 window.requestAnimationFrame(scrollPlay);
 
-//divskiftningstest*/
+//billedekarousel*/
+
+/******* Billedkarrusel *******/
+// Variable:
+let fotoEt = document.getElementById("fotoEt");
+let fotoTo = document.getElementById("fotoTo");
+let fotoTre = document.getElementById("fotoTre");
+
+let venstrepil = document.getElementById("venstrepil"); 
+let hoejrepil = document.getElementById("højrepil");
 
 
+
+// Array
+
+let carousel = [fotoEt, fotoTo, fotoTre];
+
+fotoEt.style.display = "block";
+fotoTo.style.display = "none";
+fotoTre.style.display = "none";
+
+// Knapper med billeder af pile
+hoejrepil.addEventListener("click", naesteBillede);
+venstrepil.addEventListener("click", forrigeBillede);
+
+// Funktioner
+function naesteBillede(){
+    carousel[0].style.display = "none"; // Skjul den viste
+    carousel.push(carousel[0]); // Put den første ind til sidst
+    carousel.shift(); // Fjern den første og flyt alle en ned
+    carousel[0].style.display = "block"; // Vis den der nu er først
+}
+
+function forrigeBillede(){
+    carousel[0].style.display = "none"; // Skjul den viste
+    carousel.push(carousel[0]); // Put den første ind til sidst
+    carousel.shift(); // Fjern den første og flyt alle en ned
+    carousel[0].style.display = "block"; // Vis den der nu er først
+}
+
+// Funktion til at skifte til næste billede
+function visnaesteBillede() {
+    if (fotoEt.style.order === '1') {
+        fotoEt.style.order = '2';
+        fotoTo.style.order = '3';
+        fotoTre.style.order = '1';
+    } else if (fotoTo.style.order === '1') {
+        fotoEt.style.order = '1';
+        fotoTo.style.order = '2';
+        fotoTre.style.order = '3';
+    } else {
+        fotoEt.style.order = '3';
+        fotoTo.style.order = '1';
+        fotoTre.style.order = '2';
+    }
+}
+
+// Funktion til at skifte til forrige billede
+function visforrigeBillede() {
+    if (fotoEt.style.order === '1') {
+        fotoEt.style.order = '3';
+        fotoTo.style.order = '1';
+        fotoTre.style.order = '2';
+    } else if (fotoTo.style.order === '2') {
+        fotoEt.style.order = '2';
+        fotoTo.style.order = '3';
+        fotoTre.style.order = '1';
+    } else { (fotoTre.style.order === '3') 
+        fotoEt.style.order = '1';
+        fotoTo.style.order = '2';
+        fotoTre.style.order = '3';
+    }
+}
+
+ 
   
   
 
