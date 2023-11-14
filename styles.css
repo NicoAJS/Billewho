@@ -430,51 +430,24 @@ nav{
     object-fit: cover;
     margin-bottom: 4%;
 }
+
+
+
 /**** Kontakt side ****/
-#kontaktSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-}
 
-#kontakt h1 {
-    font-size: 60pt;
-    margin-bottom: 4%;
-}
-
-#kontakt {
+.kontakt h1 {
     display: flex;
     justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 10%;
-    padding-left: 10%;
+    align-items: flex-end;
+    font-size: 90pt;
+    margin-bottom: 4%;
+    margin-left: 70%;
 }
 
-#informationer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.kontaktImg {
     width: 20%;
+    height: auto;
 }
-
-#informationer input {
-    width: 100%;
-}
-
-#kontaktImg {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#besked {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 
 /*---------add ons---------------*/
 
