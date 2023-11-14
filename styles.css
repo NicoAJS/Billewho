@@ -454,8 +454,10 @@ nav{
 }
 
 #kontaktImg {
-    width: 50%;
-    height: auto;
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    
 
 }
 #informationer{
@@ -463,6 +465,34 @@ nav{
     height: 100%;
     margin-left: 5%;
 }
+
+#informationer h1 {
+    margin-bottom: 10%;
+}
+
+#informationer input {
+    width: 80%;
+    height: 20pt;
+    margin-top: 3%;
+    background-color: #E2E1DB;
+    border: none;
+}
+
+#kontakt button {
+    width: 25%;
+    height: 25pt;
+    margin-top: 3%;
+    background-color: white;
+    border: none;
+}
+
+#informationer textarea {
+    margin-top: 3%;
+    width: 80%;
+    background-color: #E2E1DB;
+    border: none;
+}
+
 
 /*---------add ons---------------*/
 
