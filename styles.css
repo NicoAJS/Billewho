@@ -487,8 +487,10 @@ nav{
 }
 
 #kontaktImg {
-    width: 50%;
-    height: auto;
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    
 
 }
 #informationer{
@@ -496,6 +498,34 @@ nav{
     height: 100%;
     margin-left: 5%;
 }
+
+#informationer h1 {
+    margin-bottom: 10%;
+}
+
+#informationer input {
+    width: 80%;
+    height: 20pt;
+    margin-top: 3%;
+    background-color: #E2E1DB;
+    border: none;
+}
+
+#kontakt button {
+    width: 25%;
+    height: 25pt;
+    margin-top: 6%;
+    background-color: white;
+    border: none;
+}
+
+#informationer textarea {
+    margin-top: 3%;
+    width: 80%;
+    background-color: #E2E1DB;
+    border: none;
+}
+
 
 /*---------add ons---------------*/
 
@@ -697,13 +727,52 @@ footer img{
     font-weight: 400;
     font-size: 3.7vw; 
     color: #000000;
-    line-height: 165%;
+    line-height: 185%;
     margin-bottom:40px;
     }
 
     footer a{
     color: #000000;
     text-decoration: underline;
+    }
+
+    #nyhedsbrev {
+        width: 100%;
+        display: flex;
+      }
+      
+    #nyhedsbrev input[type=text], input[type=submit] {
+        width: 66%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+    #nyhedsbrev input[type=text] {
+        margin-right: 5px; 
+        margin-top: 0px;
+      }
+      
+    #nyhedsbrev input[type=submit] {
+        width: 30%;
+        background-color: #F2F2F2;
+        color: #000000;
+        border: none;
+      }
+      
+    #nyhedsbrev input[type=submit]:hover {
+        opacity: 0.8;
+      }
+    
+    #someboks{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 5% 10% 0%;
+    }
+    
+    #someicon{
+        width: 18%;
     }
 }
 
