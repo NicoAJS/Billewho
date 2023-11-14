@@ -250,7 +250,17 @@ nav{
     position: relative;
     bottom: 0;
   }
+  #set-height1 {
+    display: block;
+    position: relative;
+    bottom: 0;
+  }
 #v0 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+#v1 {
     position: sticky;
     top: 0;
     width: 100%;
@@ -430,51 +440,29 @@ nav{
     object-fit: cover;
     margin-bottom: 4%;
 }
+
+
+
 /**** Kontakt side ****/
-#kontaktSection {
+
+#kontakt{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-}
-
-#kontakt h1 {
-    font-size: 60pt;
-    margin-bottom: 4%;
-}
-
-#kontakt {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 10%;
-    padding-left: 10%;
-}
-
-#informationer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-}
-
-#informationer input {
-    width: 100%;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 5%;
 }
 
 #kontaktImg {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+    width: 50%;
+    height: auto;
 
-#besked {
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
-
+#informationer{
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+}
 
 /*---------add ons---------------*/
 
