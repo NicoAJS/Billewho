@@ -109,7 +109,5 @@ window.requestAnimationFrame(scrollPlay);
 //divskiftningstest*/
 
 
-  
-  
 
 
