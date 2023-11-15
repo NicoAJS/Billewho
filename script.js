@@ -1,6 +1,8 @@
 const logo = document.getElementById("logo");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a"); /*dette er et array - alle med classnamet nav-links indsættes */
+
+
 console.log("4");
 logo.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 console.log("6");    
@@ -14,15 +16,15 @@ console.log(navLinks.length);
         link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.5 }s `;
     } /* starter animation med tidsforskudning fra top mod bund (hvorfor linksene gradvist fremkommer) */
     });
-    localStorage.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
+    logo.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
 });
-//OBS! burgeren toggles ikke på links til et andet sted på samme html side (fix evt)
+
 
 
 
 
 let rumlist = document.getElementById("rumlist");
-omlist.style.display = "none";
+rumlist.style.display = "none";
 
 function openDropdown(){
     if (rumlist.style.display != "none"){
@@ -42,7 +44,7 @@ var frameNumber = 0, // start video at frame 0
     // get page height from video duration
     
     // select video element         
-    vid = document.getElementById('v0');
+    vid = document.getElementById("v0");
 
 // dynamically set the page height according to video length
 vid.addEventListener('loadedmetadata', function () {
@@ -66,6 +68,7 @@ function scrollPlay() {
 }
 
 window.requestAnimationFrame(scrollPlay);
+
 
 //scrollvideo til køkken
 
@@ -103,7 +106,7 @@ function scrollPlay() {
 
 window.requestAnimationFrame(scrollPlay);
 
-//billedekarousel
+//billedekarousel*/
 
 /******* Billedkarrusel *******/
 // Variable:
@@ -176,9 +179,3 @@ function visforrigeBillede() {
         fotoTre.style.order = '3';
     }
 }
-
- 
-  
-  
-
-

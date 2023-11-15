@@ -1,6 +1,6 @@
 
 *{
-    margin: 0
+    margin: 0;
     padding: 0;
 }
 
@@ -262,7 +262,7 @@ nav{
 }
 #v1 {
     position: sticky;
-    top: 900vh;
+    top: 0;
     width: 100%;
 }
 
@@ -315,7 +315,7 @@ nav{
     width: 90%;
     object-fit: cover;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 5%;
     
 }
 .trekolonner{
@@ -781,4 +781,5 @@ footer img{
         display:none;
     }
 }
+
 
