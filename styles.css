@@ -517,6 +517,8 @@ nav{
     margin-top: 3%;
     background-color: #E2E1DB;
     border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
 }
 
 #kontakt button {
@@ -532,7 +534,19 @@ nav{
     width: 80%;
     background-color: #E2E1DB;
     border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
+
+.placeholderTekst{
+    padding-left: 3%;
+}
+
+.placeholderBesked {
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
 
 
 /*---------add ons---------------*/
