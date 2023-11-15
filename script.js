@@ -69,7 +69,7 @@ function scrollPlay() {
 
 window.requestAnimationFrame(scrollPlay);
 
-
+/*
 //scrollvideo til køkken
 
 console.log('set height1');
@@ -104,7 +104,7 @@ function scrollPlay() {
     //console.log(vid.currentTime);
 }
 
-window.requestAnimationFrame(scrollPlay);
+window.requestAnimationFrame(scrollPlay);*/
 
 //billedekarousel*/
 
