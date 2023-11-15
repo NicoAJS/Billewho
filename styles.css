@@ -384,17 +384,16 @@ nav{
 }
 .karouselDiv{
     width: 40%;
-    height: 80%;
+    height: 75%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     display: flex;
     display: block;
-  
 }
 #venstrepil{
     margin-top: 20%;
-    margin-left: 1%;
-    width: 4%;
+    margin-left: 5%;
+    width: 2%;
     height: 20px;
 }
 #venstrepil:hover{
@@ -414,8 +413,8 @@ nav{
 }
 #højrepil{
     margin-top: 20%;
-    margin-right: 1%;
-    width: 4%;
+    margin-right: 5%;
+    width: 2%;
     height: 20px;
 }
 .karouselB{
@@ -430,7 +429,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin-right: 10%;
-    margin-left: 5%;
+    margin-left: 2%;
     gap: 5%;
     margin-top: 5%;
 }
