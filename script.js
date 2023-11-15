@@ -113,6 +113,8 @@ window.requestAnimationFrame(scrollPlay);*/
 let fotoEt = document.getElementById("fotoEt");
 let fotoTo = document.getElementById("fotoTo");
 let fotoTre = document.getElementById("fotoTre");
+let fotoFire = document.getElementById("fotoFire");
+let fotoFem = document.getElementById("fotoFem");
 
 let venstrepil = document.getElementById("venstrepil"); 
 let hoejrepil = document.getElementById("højrepil");
@@ -121,11 +123,13 @@ let hoejrepil = document.getElementById("højrepil");
 
 // Array
 
-let carousel = [fotoEt, fotoTo, fotoTre];
+let carousel = [fotoEt, fotoTo, fotoTre, fotoFire, fotoFem];
 
 fotoEt.style.display = "block";
 fotoTo.style.display = "none";
 fotoTre.style.display = "none";
+fotoFire.style.display = "none";
+fotoFem.style.display = "none";
 
 // Knapper med billeder af pile
 hoejrepil.addEventListener("click", naesteBillede);

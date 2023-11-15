@@ -10,7 +10,7 @@ body{
 }
 h1{
     font-family: 'Lato', sans-serif;
-    font-size: 100pt;
+    font-size: 7.5vw;
     color: #0C0054;
 }
 
@@ -34,14 +34,14 @@ h2{
     writing-mode: vertical-rl;
     text-align: center;
     transform:rotate(180deg);
-    font-size: 100pt;
+    font-size: 9vw;
     margin-top: 5%;
 }
 .vertikalHstreg{
     writing-mode: vertical-rl;
     text-align: center;
     transform:rotate(180deg);
-    font-size: 100pt;
+    font-size: 7vw;
     margin-top: 5%;
     border-left: solid black 2px;
 }
@@ -427,7 +427,7 @@ nav{
     height: 20px;
 }
 .karouselB{
-    width: 100%;
+    width: 80%;
     height: 90%;
     object-fit: cover;
     margin-bottom: 5%;
