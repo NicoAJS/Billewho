@@ -97,6 +97,9 @@ registerVideo("#bound-two", "#bound-two video")
 
 registerVideo("#bound-three", "#bound-three video")
 
+
+
+
 /******* Billedkarrusel *******/
 // Variable:
 let fotoEt = document.getElementById("fotoEt");
