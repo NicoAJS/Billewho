@@ -50,6 +50,7 @@
     <div class="fuldskærmcontainer" id="div1">
         <video controls class="objectfit">
             <source src="video/introvideo (1).mp4">
+            <p>Your user agent does not support the HTML5 Video element.</p>
         </video>
     </div>
 
@@ -59,6 +60,7 @@
     <div id="set-height"> 
         <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
             <source type="video/webm" src="video/IndgangWEBM.webm"></source>
+            
         </video>
     </div>
 
@@ -86,11 +88,15 @@
 
     <!-- --------film fra entre til stue---------- -->
 
-    <div class="fuldskærmcontainer">
-        <video controls class="objectfit">
-            <source src="video/entretilstue.mp4">
-        </video>
-    </div>
+    <div id="bound-one" class="scroll-bound">
+		<div class="content">
+			
+ 			<video width="600" muted preload>
+				<source src="video/entretilstue.mp4" type="video/mp4">
+				<p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+		</div>
+	</div>
 
     <!-- --------stue---------- -->
 
@@ -159,11 +165,14 @@
     </div>
 
     <!-- --------film fra stue til køkken---------- -->
-    <div class="fuldskærmcontainer">
-        <video controls class="objectfit">
-            <source src="video/stuetilkokken.mp4">
-        </video>
-    </div>
+    <div id="bound-two" class="scroll-bound">
+		<div class="content">
+ 			<video width="600" muted preload>
+   			<source src="video/stuetilkokken.mp4" type="video/mp4">
+               <p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+		</div>
+	</div>
     <!-- --------køkken---------- -->
     <div class="fuldskærmcontainer" id="div8">
         <div class="billede-tekst aflangDiv">
@@ -194,11 +203,14 @@
 
     <!-- --------film fra køkken til kontor---------- -->
 
-    <div class="fuldskærmcontainer">
-        <video controls class="objectfit">
-            <source src="video/kokkentilkontor.mp4">
-        </video>
-    </div>
+    <div id="bound-three" class="scroll-bound">
+		<div class="content">
+ 			<video width="600" muted preload>
+   			<source src="video/kokkentilkontor.mp4" type="video/mp4">
+    		<p>Your user agent does not support the HTML5 Video element.</p>
+      </video>
+		</div>
+	</div>
     <!-- --------kontor---------- -->
     <div class="fuldskærmcontainer" id="div10">
         <div class="billede-tekst">
