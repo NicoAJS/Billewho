@@ -69,44 +69,11 @@ function scrollPlay() {
 
 window.requestAnimationFrame(scrollPlay);
 
-/*
-//scrollvideo til køkken
 
-console.log('set height1');
-var setHeight1 = document.getElementById("set-height1");
-console.log(setHeight1);
-var frameNumber = 0, // start video at frame 0
-    // lower numbers = faster playback
-    playbackConst = 900,
-    // get page height from video duration
-    
-    // select video element         
-    vid1 = document.getElementById("v1");
 
-// dynamically set the page height according to video length
-vid1.addEventListener('loadedmetadata', function () {
-    getmetadata();
-});
 
-if (vid1.readyState >= 2) {
-    getmetadata();
-}
 
-function getmetadata() {
-    setHeight1.style.height = Math.floor(vid1.duration) * playbackConst + "px";
-}
-
-// Use requestAnimationFrame for smooth playback
-function scrollPlay() {
-    var frameNumber = window.pageYOffset / playbackConst;
-    vid1.currentTime = frameNumber;
-    window.requestAnimationFrame(scrollPlay);
-    //console.log(vid.currentTime);
-}
-
-window.requestAnimationFrame(scrollPlay);*/
-
-//billedekarousel*/
+//andre videoer on scroll
 const registerVideo = (bound, video) => {
 	bound = document.querySelector(bound);
 	video = document.querySelector(video);
