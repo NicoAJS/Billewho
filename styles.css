@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*---------generelle regler-------*/
@@ -253,6 +254,25 @@ nav{
 
 
 /*-------RUM---------*/
+/*scrollvideoer, undtagen nr 1*/
+
+.scroll-bound {
+	height: 500vh;}
+	
+	.content {
+		height: 100vh;
+		width: 100%;
+		position: sticky;
+		top:0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	video {
+		width: 100%;
+	}
 
 .objectfit{
     width: 100%;
